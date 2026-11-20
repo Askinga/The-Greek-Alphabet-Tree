@@ -25,4 +25,11 @@ addLayer("a", {
         {key: "a", description: "A: Reset for α", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
     layerShown(){return true},
+	upgrades: {
+		11: {
+			title: "α1",
+			description: "x2 point gain",
+			cost: new ExpantaNum(1),
+		},
+	},
 })
