@@ -1,6 +1,6 @@
 let modInfo = {
-	name: "Difficulty Chart Tree",
-	id: "Kshdjsixh",
+	name: "The Greek Alphabet Tree",
+	id: "iaushxn",
 	author: "Askinga/Sanas",
 	pointsName: "points",
 	discordName: "",
@@ -42,19 +42,11 @@ function getPointGen() {
 		return new ExpantaNum(0)
 
 	let gain = new ExpantaNum(1)
-	if (hasUpgrade('f', 11)) gain = gain.times(2)
-	if (hasUpgrade('f', 13)) gain = gain.times(upgradeEffect('f', 13))
-	if (hasUpgrade('f', 15)) gain = gain.times(upgradeEffect('f', 15))
-	if (hasUpgrade('f', 22)) gain = gain.times(upgradeEffect('f', 22))
-	if (hasUpgrade('f', 24)) gain = gain.times(upgradeEffect('f', 24))
-	if (hasUpgrade('f', 31)) gain = gain.times(tmp.f.effP1)
-	if (hasUpgrade('f', 35)) gain = gain.times(3)
 	return gain
 }
 
 // You can add non-layer related variables that should to into "player" and be saved here, along with default values
 function addedPlayerData() { return {
-	best: new ExpantaNum(0),
 }}
 
 // Display extra things at the top of the page
